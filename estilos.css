@@ -789,7 +789,7 @@ footer .wpp{
 }
 .Estudiantes .EB{
     grid-area: EB;
-    background-image: url("./imag/IngP.PNG");
+    background-image: url("./imag/IngP.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
