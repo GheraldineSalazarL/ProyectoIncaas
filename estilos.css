@@ -480,6 +480,7 @@ footer .wpp{
     padding: 10px;
     border: 1px solid #083B86;
     border-radius: 5px;
+    transform:scale(1.1, 1.1) /*aumenta el tamano 1.1)*/
 }
 
 
@@ -592,6 +593,7 @@ footer .wpp{
     filter:brightness(0.7);
     border: 0px;
     box-shadow: 7px 7px 10px #5c5d5e;
+    transform:scale(1.05, 1.05);
 }
 .Programas a{
     text-decoration: none;
@@ -685,7 +687,7 @@ footer .wpp{
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
-    background-color: #070d16;
+    background: linear-gradient(to bottom, #070d16, #083B86, #6AB528);
 }
 .Matriculas .MDext .MD{
     margin: auto;
@@ -781,14 +783,18 @@ footer .wpp{
 }
 .Estudiantes .EA{
     grid-area: EA;
-    background-image: url("./imagenes/IngV.jpg");
+    background-image: url("./imag/IngV.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .Estudiantes .EB{
     grid-area: EB;
-    background-image: url("./imagenes/IngP.PNG");
+    background-image: url("./imag/IngP.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .Estudiantes .EA .EAint, .EBint{
-    width: 50vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-items: flex-end;
@@ -844,6 +850,9 @@ footer .wpp{
 }
 .contactos .CC{
     grid-area: CC;
+}
+.contactos .CC:hover, .CB:hover{
+    transform:scale(1.1, 1.1) 
 }
 .contactos iframe{
     padding: 15px;
@@ -920,6 +929,9 @@ footer .wpp{
 .TDTC p{
     padding-bottom: 40px;
 }
+
+
+
 
 
 
