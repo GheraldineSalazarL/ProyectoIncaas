@@ -1,0 +1,295 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./imagenes/favicon-96x96.png">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/461bbe17d9.js" crossorigin="anonymous"></script>
+        <title>INCAAS</title>
+    </head>
+
+    <body>
+
+        <header>
+            <a class="logo" href="./Index.html"><img src="./imagenes/LCompleto.png" alt="Logo"width="400px"></a>
+            <nav>
+                <a href="./IniciarSesion.html"><img src="./imagenes/iniciar-sesion.png" alt="Iniciar Sesion" width="40px"></a>
+                <ul class="menu"> 
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./Programas.html">Programas</a>
+                        <ul class="submenu">
+                            <li><a href="./Programas.html#tecnicos">Técnicos</a></li>
+                            <li><a href="./Programas.html#cursos">Cursos</a></li>
+                            <li><a href="./Programas.html#seminarios">Seminarios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./Matriculas.html">Matrículas</a></li>
+                    <li><a href="./Estudiantes.html">Estudiantes</a></li>
+                    <li><a href="./Contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="Index">
+            <div class="A">
+                    <h1>!Comienza a estudiar ahora!</h1>
+                    <h2>Nuestros programas se adaptan a tus necesidades</h2>
+                    <section class="A1">
+                        <img src="./imagenes/inicio.png" alt="Comienza" width="210px">
+                        <section class="A2">
+                            <h4>Escóge la metodología que más te gusta</h4>
+                            <section class="list">
+                                <ul class="l1">
+                                    <li><i class="fa-solid fa-person-chalkboard"></i></li>
+                                    <li><i class="fa-solid fa-laptop"></i></li>
+                                    <li><i class="fa-solid fa-desktop"></i></li>
+                                </ul>
+                                <ul class="l2">
+                                    <li>Clases presenciales</li>
+                                    <li>Clases virtuales sincrónicas</li>
+                                    <li>Clases virtuales asincrónicas</li>
+                                </ul>
+                            </section>
+                            <h4>Y como más te gusta</h4>
+                            <section class="list">
+                                <ul class="l1">
+                                    <li><i class="fa-solid fa-user-tie"></i></i></li>
+                                    <li><i class="fa-solid fa-scroll"></i></li>
+                                    <li><i class="fa-solid fa-clock"></i></li>
+                                </ul>
+                                <ul class="l2">
+                                    <li>Aprende con expertos</li>
+                                    <li>Programas certificados</li>
+                                    <li>Plataforma educativa las 24 horas</li>
+                                </ul>
+                            </section>
+                            <h4 class="corp"><b>Pregunta por los planes corporativos*</b></h4>
+                        </section>
+                    </section>
+            </div>
+            <div class="B">
+                <section class="form">
+                    <h3 class="titulof">¿Quieres que te llamemos?</h3>
+                    <form action="">
+                        <input class="controls" type="text" placeholder="Ingrésa tu Nombre" name="nombre" required>
+                        <input class="controls" type="text" placeholder="Ingésa tu Apellido" name="apellido" required>
+                        <input class="controls" type="email" placeholder="Ingrésa tu Email" name="email" required>
+                        <input class="controls" type="tel" placeholder="Ingrésa tu Teléfono" name="telfono" required>
+                        <label for="fecha">Cuándo te llamamos?</label>
+                        <input class="controls" type="date" placeholder="¿Cuándo te llamamos?" name="fecha">
+                        <select class="controls" id="Programa" name="programa" id="">
+                            <option value="seleccion">Selecciona el Programa</option>
+                            <option value="ts">Técnico Laboral en Sistemas</option>
+                            <option value="ta">Técnico Laboral en Asistencia Administrativa</option>
+                            <option value="tas">Técnico Laboral en Auxiliar Administrativo de Salud</option>
+                            <option value="td">Técnico Laboral en Diseño y Dibujo Computarizado</option>
+                            <option value="i1">Inglés 1</option>
+                            <option value="i2">Inglés 2</option>
+                            <option value="p">Portugues</option>
+                            <option value="eb">Excel Básico</option>
+                            <option value="ei">Excel Intermedio con Énfasis en Tablas Dinámicas</option>
+                            <option value="lc">Lectura Crítica</option>
+                            <option value="rl">Razonamiento Lógico</option>
+                            <option value="ps">Pruebas Saber</option>
+                            <option value="s">Seminario</option>
+                        </select>
+                        <p class="pf">Estoy de acuerdo con el <label for="acepta"><a href="./TratamientoDeDatos.html" target="_blanc">tratamiento de datos</a></label></p>
+                        <section class="extboton">
+                            <input class="boton" type="submit" value="Si, quiero que me llamen!">
+                        </section>
+                    </form>
+                </section>
+            </div>
+            <div class="C">
+                <h2>¿Por qué estudiar en INCAAS?</h2>
+            </div>
+            <div class="D">
+                <h3>Programas Presenciales</h3>
+                <section class="Dbox">
+                    <section class="D1">
+                        <img src="./imagenes/cp1.png" alt="Salones de clases y laboratorios" width="70%">
+                        <br>
+                        <h5>Salones y laboratorios</h5>
+                    </section>
+                    <section class="D2">
+                        <img src="./imagenes/cp2.png" alt="Avanza de la mano de un tutor experto" width="70%">
+                        <br>
+                        <h5>Avanza junto a un tutor(a)</h5>
+                    </section>
+                    <section class="D3">
+                        <img src="./imagenes/cp3.png" alt="Grupos reducidos" width="70%">
+                        <br>
+                        <h5>Grupos reducidos</h5>
+                    </section>
+                    <section class="D4">
+                        <img src="./imagenes/cp4.png" alt="Clases los fines de semana" width="70%">
+                        <br>
+                        <h5>Clases los fines de semana</h5>
+                    </section>
+                    <section class="D5">
+                        <img src="./imagenes/cp5.png" alt="Proyectos prácticos" width="70%">
+                        <br>
+                        <h5>Proyectos prácticos</h5>
+                    </section>
+                    <section class="D6">
+                        <img src="./imagenes/cp6.png" alt="Plataforma educativa" width="70%">
+                        <br>
+                        <h5>Plataforma educativa</h5>
+                    </section>
+                </section>
+            </div>
+            <div class="E">
+                <h3>Programas Virtuales</h3>
+                <section class="Ebox">
+                    <section class="E1">
+                        <img src="./imagenes/cv1.png" alt="Plataforma las 24 Hs" width="70%">
+                        <br>
+                        <h5>Plataforma las 24 Hs</h5>
+                    </section>
+                    <section class="E2">
+                        <img src="./imagenes/cv2.png" alt="Avanza a tu propio ritmo (Asincrónico)" width="70%">
+                        <br>
+                        <h5>Avanza a tu propio ritmo*</h5>
+                    </section>
+                    <section class="E3">
+                        <img src="./imagenes/cv3.png" alt="Tutor personalizado" width="70%">
+                        <br>
+                        <h5>Tutor(a) personalizado(a)</h5>
+                    </section>
+                    <section class="E4">
+                        <img src="./imagenes/cv4.png" alt="Actividades interativas" width="70%">
+                        <br>
+                        <h5>Actividades interativas</h5>
+                    </section>
+                    <section class="E5">
+                        <img src="./imagenes/cv5.png" alt="Clases grupales (Sincrónico)" width="70%">
+                        <br>
+                        <h5>Clases grupales*</h5>
+                    </section>
+                    <section class="E6">
+                        <img src="./imagenes/cv6.png" alt="Clases pregrabadas (Asincrónico)" width="70%">
+                        <br>
+                        <h5>Clases pregrabadas* </h5>
+                    </section>
+                </section>
+            </div>
+            <div class="F">
+                <h3>Planes Corporativos</h3>
+                <section class="Fbox">
+                    <section class="F1">
+                        <img src="./imagenes/pc1.png" alt="Arma tu plan de estudio" width="70%">
+                        <br>
+                        <h5>Arma tu plan de estudio</h5>
+                    </section>
+                    <section class="F2">
+                        <img src="./imagenes/pc2.png" alt="Coordina tus horarios" width="70%">
+                        <br>
+                        <h5>Coordina tus horarios</h5>
+                    </section>
+                    <section class="F3">
+                        <img src="./imagenes/pc3.png" alt="Precios increíbles" width="70%">
+                        <br>
+                        <h5>Precios increíbles</h5>
+                    </section>
+                    <section class="F4">
+                        <img src="./imagenes/pc4.png" alt="Clases virtuales y/o presenciales" width="70%">
+                        <br>
+                        <h5>Clases virtuales y/o presenciales</h5>
+                    </section>
+                    <section class="F5">
+                        <img src="./imagenes/pc5.png" alt="Plataforma 24 Hs" width="70%">
+                        <br>
+                        <h5>Plataforma 24 Hs</h5>
+                    </section>
+                    <section class="F6">
+                        <img src="./imagenes/pc6.png" alt="Homologa materias" width="70%">
+                        <br>
+                        <h5>Homologa materias </h5>
+                    </section>
+                </section>
+            </div>
+            <div class="G">
+                <section class="G1A">
+                    <img src="./imagenes/Refuerzo.jpg" alt="Refuerzo" width="100%">
+                </section>
+                <section class="G1B">
+                    <h2> Sé el mejor</h2> 
+                    <br>
+                    <p>Para ser el mejor en el colegio es importante que refuerces tus conocimientos, todo el equipo de Incaas tiene por objetivo ayudarte a adquirir habilidades que elebarán tus calificiones, mejorará tu memoria, desarrollarás capacidades de resolución de problemas, desarrollarás aptitudes en un segundo idioma y hasta aumentará tu autoestima. Nuestro excelente equipo de trabajo nos hace altamente competitivos, brindando siempre la Calidad y Superación precisa para ti, que quieres buscar el más alto progreso.</p>
+                </section>
+                
+                <section class="G2B">
+                    <img src="./imagenes/Laboral.jpg" alt="Mundo laboral" width="100%">
+                </section>
+                <section class="G2A">
+                    <h2> Prepárate para el mundo laboral</h2> 
+                    <br>
+                    <p>¿Quieres entrar al mundo laboral? con Incaas podrás desarollar esos skills y aptitudes que toda empresa necesita, capacitandote en uno de nuestros Técnicos Laborales de muy alta calidad ya que pensamos en tus necesidades y además cumplimos con los estándares de Clasificación Nacional de Ocupaciones, las mismas que lidera el SENA, lo que hace que nuestros programas y diseños curriculares tengan aplicabilidad a las Competencias Laborales determinadas en la comunidad donde nos encontremos y en el sector donde tú quieres trabajar o te quieres fortalecerte.
+                    </p>
+                </section>
+                <section class="G3A">
+                    <img src="./imagenes/Adelante.jpg" alt="Mundo laboral" width="100%">
+                </section>
+                <section class="G3B">
+                    <h2> Educación por competencia, un paso adelante</h2> 
+                    <br>
+                    <p>La educación por competencias es relativamente nueva, nosotros la hemos aplicado en nuestro metodología de trabajo en todo nuestro trayecto de experiencia, por eso llevamos un paso adelante aplicando el  saber, saber-hacer, saber-ser y saber-emprender.</p>
+                </section>
+            </div>
+            <div class="H">
+                <h2>Nuestros Programas</h2>
+            </div>
+            <div class="I">
+                <img src="./imagenes/Tecnicos.jpg" alt="Técnicos Laborales" width="100%">
+                <h3>Técnicos Laborales</h3>
+                <p>Programas con duración de máximo 18 meses  donde podrás obtener una certificación de Técnico Laboral por Competencia si terminas tu programa. Necesitas estar minino en noveno grado o tener más de 16 años. </p>
+                <a href="./Programas.html#tecnicos"><input type="button" value="Ver más"></a>
+            </div>
+            <div class="J">
+                <img src="./imagenes/Cursos.jpg" alt="Cursos" width="100%">
+                <h3>Cursos</h3>
+                <p>Cursos de duración de 30, 60 y 90 horas que ayudan a desarrollar capacidades adicionales a tu día a día, podrás obtener una Constancia de Estudio con Intensidad Horaria. Pueden ser tomados por cualquier persona, sin importar que esté en un Técnico Laboral.</p>
+                <a href="./Programas.html#cursos"><input type="button" value="Ver más"></a>
+            </div>
+            <div class="K">
+                <img src="./imagenes/Seminarios.jpg" alt="Seminarios" width="100%">
+                <h3>Seminarios</h3>
+                <p>Módulos adicionales en los programas laborales que te ayudan a desarrollar mejores competencias, tienen una duración de 8 horas y obtendrás una Constancia de Asistencia con Intensidad Horaria. Pueden ser tomados por cualquier persona.</p>
+                <a href="./Programas.html#seminarios"><input type="button" value="Ver más"></a>
+            </div>
+        </main>
+
+        <hr>
+        <footer>
+            <section class="footer1">
+                <h4>Llámanos o Escríbenos</h4>
+                <p><b>Teléfono:</b> 0317313131</p>
+                <p><b>Celular:</b> (+57) 3137444734</p>
+                <p><b>WhatsApp:</b> (+57) 3216632268</p>
+                <p><b>Email:</b> instituto.incaasoficial@gmail.com, instituto.incaas@gmail.com</p>
+            </section>
+            <section class="footer2"> 
+                <h4>Siguenos en:</h4>
+                <a href="https://es-la.facebook.com/Instituto.Incaas/" target="_blanc"><img src="./imagenes/facebook.png" alt="facebook" width="40px"></a>
+                <a href="https://www.youtube.com/user/INCAASNARINO" target="_blanc"><img src="./imagenes/youtube.png" alt="youtube"width="40px"></a>
+                <a href="https://twitter.com/institutoincaas" target="_blanc"><img src="./imagenes/twitter.png" alt="linkedin"width="40px"></a>
+                <a href="https://www.instagram.com/instituto.incaas/?hl=es" target="_blanc"><img src="./imagenes/instagram.png" alt="instagram"width="40px"></a>
+                <br>
+                <br>
+                <h4>Suscríbete al Newsletter</h4>
+                <p>Las últimas noticias sobre habilidades que debes aprender para enfrentarte al mundo laboral y educativo.</p>
+                <form action="">
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" required>
+                    <input class="footerboton" type="submit" value="Suscribirme">
+                </form>
+            </section>
+            <a class="wpp" href="https://wa.me/573216632268" target="_blanc"> <img src="./imagenes/whatsapp.png" alt="WhatsApp" width="40px"></a>
+        </footer>
+    </body>
+</html>

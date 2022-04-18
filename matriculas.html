@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./imagenes/favicon-96x96.png">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/461bbe17d9.js" crossorigin="anonymous"></script>
+        <title>INCAAS</title>
+    </head>
+
+    <body>
+
+        <header>
+            <a class="logo" href="./Index.html"><img src="./imagenes/LCompleto.png" alt="Logo"width="400px"></a>
+            <nav>
+                <a href="./IniciarSesion.html"><img src="./imagenes/iniciar-sesion.png" alt="Iniciar Sesion" width="40px"></a>
+                <ul class="menu"> 
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./Programas.html">Programas</a>
+                        <ul class="submenu">
+                            <li><a href="./Programas.html#tecnicos">Técnicos</a></li>
+                            <li><a href="./Programas.html#cursos">Cursos</a></li>
+                            <li><a href="./Programas.html#seminarios">Seminarios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./Matriculas.html">Matrículas</a></li>
+                    <li><a href="./Estudiantes.html">Estudiantes</a></li>
+                    <li><a href="./Contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="Matriculas">
+            <div class="MA">
+                <h1>¡Inscríbete Aquí!</h1>
+                <h4>Para realizar tu inscripción a cualquiera de nuestros programas debes completar 3 sencillos pasos:</h4>
+            </div>
+            <div class="MB">
+                <ul class="Ml1">
+                    <li><i class="fa-solid fa-1"></i></li>
+                </ul>
+                <ul class="Ml2">
+                    <li>Dilingencia el siguiente formulario con tus datos personales</li>
+                </ul>
+                <ul class="Ml3">
+                    <li><i class="fa-solid fa-2"></i></i></li>
+                </ul>
+                <ul class="Ml4">
+                    <li>Escoge el programa que deseas estudiar, selecciona el medio de pago y realiza tu pago</li>
+                </ul>
+                <ul class="Ml5">
+                    <li><i class="fa-solid fa-3"></i></li>
+                </ul>
+                <ul class="Ml6">
+                    <li>A continuación, recibirás un mail de confirmación de reservación de cupo junto con el instrutivo de pasos a seguir</li>
+                </ul>
+            </div> 
+            <div class="MC">
+                <img src="./imagenes/Matric.png" alt="Comienza" width="300px">
+            </div>
+            <div class="MDext">
+                <div class="MD">
+                    <section class="MDA">
+                        <i class="fa-solid fa-1"></i>
+                        <h2>Primer Paso:</h2>
+                    </section>
+                    <section class="form">
+                        <h3 class="titulof">Formulario de Inscripción</h3>
+                        <form action="">
+                            <input class="controls" type="text" placeholder="Ingrésa tu Nombre" name="nombre" required>
+                            <input class="controls" type="text" placeholder="Ingésa tu Apellido" name="apellido" required>
+                            <input class="controls" type="text" placeholder="Ingésa tu Número de Identificación" name="nid" required>
+                            <input class="controls" type="email" placeholder="Ingrésa tu Email" name="email" required>
+                            <input class="controls" type="tel" placeholder="Ingrésa tu Teléfono" name="telfono" required>
+                            <select class="controls" id="Programa" name="programa" id="">
+                                <option value="seleccion">Selecciona el Programa</option>
+                                <option value="ts">Técnico Laboral en Sistemas</option>
+                                <option value="ta">Técnico Laboral en Asistencia Administrativa</option>
+                                <option value="tas">Técnico Laboral en Auxiliar Administrativo de Salud</option>
+                                <option value="td">Técnico Laboral en Diseño y Dibujo Computarizado</option>
+                                <option value="i1">Inglés 1</option>
+                                <option value="i2">Inglés 2</option>
+                                <option value="p">Portugues</option>
+                                <option value="eb">Excel Básico</option>
+                                <option value="ei">Excel Intermedio con Énfasis en Tablas Dinámicas</option>
+                                <option value="lc">Lectura Crítica</option>
+                                <option value="rl">Razonamiento Lógico</option>
+                                <option value="ps">Pruebas Saber</option>
+                                <option value="s">Seminario</option>
+                            </select>
+                            <p class="pf">Estoy de acuerdo con los <label for="acepta"><a href="./TratamientoDeDatos.html" target="_blanc">Terminos y Condiciones</a></label></p>
+                            <section class="extboton">
+                                <input class="boton" type="submit" value="Siguiente">
+                            </section>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <hr>
+        <footer>
+            <section class="footer1">
+                <h4>Llámanos o Escríbenos</h4>
+                <p><b>Teléfono:</b> 0317313131</p>
+                <p><b>Celular:</b> (+57) 3137444734</p>
+                <p><b>WhatsApp:</b> (+57) 3216632268</p>
+                <p><b>Email:</b> instituto.incaasoficial@gmail.com, instituto.incaas@gmail.com</p>
+            </section>
+            <section class="footer2"> 
+                <h4>Siguenos en:</h4>
+                <a href="https://es-la.facebook.com/Instituto.Incaas/" target="_blanc"><img src="./imagenes/facebook.png" alt="facebook" width="40px"></a>
+                <a href="https://www.youtube.com/user/INCAASNARINO" target="_blanc"><img src="./imagenes/youtube.png" alt="youtube"width="40px"></a>
+                <a href="https://twitter.com/institutoincaas" target="_blanc"><img src="./imagenes/twitter.png" alt="linkedin"width="40px"></a>
+                <a href="https://www.instagram.com/instituto.incaas/?hl=es" target="_blanc"><img src="./imagenes/instagram.png" alt="instagram"width="40px"></a>
+                <br>
+                <br>
+                <h4>Suscríbete al Newsletter</h4>
+                <p>Las últimas noticias sobre habilidades que debes aprender para enfrentarte al mundo laboral y educativo.</p>
+                <form action="">
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" required>
+                    <input class="footerboton" type="submit" value="Suscribirme">
+                </form>
+            </section>
+            <a class="wpp" href="https://wa.me/573216632268" target="_blanc"> <img src="./imagenes/whatsapp.png" alt="WhatsApp" width="40px"></a>
+        </footer>
+    </body>
+</html>

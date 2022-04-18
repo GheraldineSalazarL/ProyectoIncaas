@@ -1,0 +1,1328 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+body{
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-------------------HEADER---------------------*/
+header{
+    align-items: center;
+    background-color: #D0D2D4;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "logo menu";
+}
+.logo{
+    grid-area: logo;
+    margin-left:50px;
+}
+nav{
+    grid-area: menu;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;  
+    margin-block: auto;  
+    margin-right: 50px;
+}
+header nav a{ 
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+.menu{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.menu li a{
+    text-decoration: none;
+    padding: 5px;
+    margin: 2px;
+    border-bottom: solid 1.4px #083B86;
+    border-top: solid 1.4px #083B86;
+    color: #083B86;
+}
+.submenu{
+    display: none;
+    list-style: none;
+    position: absolute;
+}
+.submenu li {
+    padding: 5px;
+    position: relative;
+    top: 15px;
+}
+.submenu li a{
+    border: 0;
+}
+.menu li a:hover{
+    background-color: #083B86;
+    color: white;
+}
+.menu li:hover .submenu{
+    display: block;
+    background-color: #D0D2D4;
+    height: 110px;
+}
+.submenu li:hover{
+    background-color: #083B86;
+}
+
+
+
+/*-----------------------FOOTER----------------------------*/
+footer{
+    background-color: #070d16;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "footer1 footer2";
+    color: white;
+    padding: 10px;
+    align-items: center;
+    font-size: 0.8rem;
+}
+footer .footer1{
+    grid-area: footer1;
+    margin: auto;
+    padding: 5px;
+}
+footer section h4{
+    color: #6AB528;
+    padding-bottom: 5px;
+}
+footer section p{
+    padding-top: 3px;
+}
+footer .footer2{
+    grid-area: footer2;
+    align-self: center;
+    padding: 10px;
+    border-left: white solid 2px;
+    padding-left: 20px;
+}
+footer .footerboton{
+    background-color: #6AB528;
+}
+footer .footerboton:hover{
+    background-color: #083B86;
+    color: white;
+}
+footer .wpp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+
+
+
+
+/*------------------------INDEX-------------------------*/
+.Index{
+    background-color: white;
+    width: 90%;
+   /* height: auto;*/
+    color: #083B86;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    grid-template-areas: 
+    "A A B"
+    "C C C"
+    "D E F"
+    "G G G"
+    "H H H"
+    "I J K";
+}
+.A{
+    grid-area: A;
+    margin: 5px;
+}
+.A h1{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.A .A1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+.A .A1 img{
+    margin-right: 40px;
+}
+.A .A2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.A .A2 h4{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.A .A2 ul{
+    list-style: none;
+}
+.A .A2 li{
+    font-size: 1.5rem;
+}
+.A .A2 .list{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr;
+    gap:5px;
+    grid-template-areas: 
+    "l1 l2";
+}
+.A .A2 .list .l1{
+    grid-area: l1;
+    justify-self: end;
+}
+.A .A2 .list .l2{
+    grid-area: l2;
+    padding-top: 5px;
+}
+.A .A2 .corp{
+    align-self: flex-end;
+    color: #6AB528;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+.B{
+    grid-area: B;
+    margin: 20px 0px 20px 0px;
+}
+.B .form{
+    width: 100%;
+    border: #083B86 solid;
+    border-radius: 10px;
+    padding: 15px;
+    color: #083B86;
+    box-shadow: 7px 7px 10px #5c5d5e;
+}
+.B .form .titulof{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.B .form .controls{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #083B86;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #083B86;
+}
+.B .form .pf{
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-size: 1rem;
+}
+.B .form .pf a{
+    color: #083B86;
+    text-decoration: none;
+}
+.B .form .pf a:hover{
+    color: #6AB528;
+    text-decoration: underline;
+}
+.B .form .extboton{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.B .form .boton{
+    background-color: #6AB528;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.B .form .boton:hover{
+    background-color: #083B86;
+    color: white;
+}
+
+.C{
+    grid-area: C;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 60px;
+}
+
+.D{
+    grid-area: D;
+}
+.D .Dbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap:15px;
+    grid-template-areas: 
+    "D1 D2 D3"
+    "D4 D5 D6";
+}
+.D .Dbox .D1{
+    grid-area: D1;
+}
+.D .Dbox .D2{
+    grid-area: D2;
+}
+.D .Dbox .D3{
+    grid-area: D3;
+}
+.D .Dbox .D4{
+    grid-area: D4;
+}
+.D .Dbox .D5{
+    grid-area: D5;
+}
+.D .Dbox .D6{
+    grid-area: D6;
+}
+.E{
+    grid-area: E;
+}
+.E .Ebox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap:15px;
+    grid-template-areas: 
+    "E1 E2 E3"
+    "E4 E5 E6";
+}
+.E .Ebox .E1{
+    grid-area: E1;
+}
+.E .Ebox .E2{
+    grid-area: E2;
+}
+.E .Ebox .E3{
+    grid-area: E3;
+}
+.E .Ebox .E4{
+    grid-area: E4;
+}
+.E .Ebox .E5{
+    grid-area: E5;
+}
+.E .Ebox .E6{
+    grid-area: E6;
+}
+.F{
+    grid-area: F;
+}
+.F .Fbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap:15px;
+    grid-template-areas: 
+    "F1 F2 F3"
+    "F4 F5 F6";
+}
+.F .Fbox .F1{
+    grid-area: F1;
+}
+.F .Fbox .F2{
+    grid-area: F2;
+}
+.F .Fbox .F3{
+    grid-area: F3;
+}
+.F .Fbox .F4{
+    grid-area: F4;
+}
+.F .Fbox .F5{
+    grid-area: F5;
+}
+.F .Fbox .F6{
+    grid-area: F6;
+}
+.D h3, .E h3, .F h3{
+    text-align: center;
+    padding: 15px;
+}
+.D .Dbox, .E .Ebox, .F .Fbox{
+    text-align: center;
+    padding: 10px;
+    border: #083B86 double 2px;
+    border-radius: 2%;
+    box-shadow: 7px 7px 10px #5c5d5e;
+    justify-content: center;
+}
+.D .Dbox img, .E .Ebox img, .F .Fbox img{
+    padding: 5px;
+    border: #083B86 solid 2px;
+    border-radius: 100%;
+    justify-self: center;
+}
+
+.G{
+    grid-area: G;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 50px;
+    grid-template-areas: 
+    "G1A G1B"
+    "G2A G2B"
+    "G3A G3B";
+    margin-top: 50px;
+    align-items: center;
+}
+.G .G1A{
+    grid-area: G1A;
+}
+.G .G1B{
+    grid-area: G1B;
+}
+.G .G2A{
+    grid-area: G2A;
+}
+.G .G2B{
+    grid-area: G2B;
+}
+.G .G3A{
+    grid-area: G3A;
+}
+.G .G3B{
+    grid-area: G3B;
+}
+.G img{
+    border: solid white;
+    border-radius: 15px;
+}
+.G .G1B, .G2A, .G3B{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.G h2{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.H{
+    grid-area: H;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 60px;
+    margin-bottom: 16px;
+}
+
+.I{
+    grid-area: I;
+}
+.J{
+    grid-area: J;
+}
+.K{
+    grid-area: K;
+}
+.I, .J, .K{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0px 20px 20px 20px;
+}
+.I h3, .J h3, .K h3{
+    background-color: #083B86;
+    color: white;
+    padding: 10px 0px 10px 0px;
+}
+.I p, .J p, .K p{
+    padding: 10px 0px 10px 0px;
+}
+.I a, .J a, .K a{
+    margin: auto;
+    width: 50%;
+}
+.I input, .J input, .K input{
+    background-color: #6AB528;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #6AB528;
+    border-radius: 5px;
+}
+.I input:hover, .J input:hover, .K input:hover{
+    background-color: #083B86;
+    color: white;
+    padding: 10px;
+    border: 1px solid #083B86;
+    border-radius: 5px;
+}
+
+
+/*--------------------PROGRAMAS---------------------*/
+.Programas{
+    width: 90%;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #083B86;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    row-gap: 15px;
+    grid-template-areas: 
+    "PA PA PA PA"
+    "PB PB PB PB"
+    "PC PD PE PF"
+    "PG PG PG PG"
+    "PH PI PJ PK"
+    "PL PM PN PO"
+    "PP PP PP PP"
+    "PQ PR PS PT"
+    "PU PV PW PX";    
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Programas .PA{
+    grid-area: PA;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.Programas .PC{
+    grid-area: PC;
+}.Programas .PD{
+    grid-area: PD;
+}.Programas .PE{
+    grid-area: PE;
+}.Programas .PF{
+    grid-area: PF;
+}
+.Programas .PH{
+    grid-area: PH;
+}.Programas .PI{
+    grid-area: PI;
+}.Programas .PJ{
+    grid-area: PJ;
+}.Programas .PK{
+    grid-area: PK;
+}.Programas .PL{
+    grid-area: PL;
+}.Programas .PM{
+    grid-area: PM;
+}.Programas .PN{
+    grid-area: PN;
+}.Programas .PO{
+    grid-area: PO;
+}
+.Programas .PQ{
+    grid-area: PQ;
+}.Programas .PR{
+    grid-area: PR;
+}.Programas .PS{
+    grid-area: PS;
+}.Programas .PT{
+    grid-area: PT;
+}.Programas .PU{
+    grid-area: PU;
+}.Programas .PV{
+    grid-area: PV;
+}.Programas .PW{
+    grid-area: PW;
+}.Programas .PX{
+    grid-area: PX;
+}
+.Programas .PB{
+    grid-area: PB;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.Programas .PG{
+    grid-area: PG;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.Programas .PP{
+    grid-area: PP;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.Programas img{
+    width: 100%;
+}
+.Programas h3{
+    padding: 10px 0px 10px 0px;
+}
+.Programas .PC, .PD, .PE, .PF, .PH, .PI, .PJ, .PK, .PL, .PM, .PN, .PO, .PQ, .PR, .PS, .PT, .PU, .PV, .PW, .PX{
+    display: flex;
+    flex-direction: column;
+    background-color: #083B86;
+    color: white;
+}
+.Programas .PC:hover, .PD:hover, .PE:hover, .PF:hover, .PH:hover, .PI:hover, .PJ:hover, .PK:hover, .PL:hover, .PM:hover, .PN:hover, .PO:hover, .PQ:hover, .PR:hover, .PS:hover, .PT:hover, .PU:hover, .PV:hover, .PW:hover, .PX:hover{
+    background-color: #6AB528;
+    color: white;
+    filter:brightness(0.7);
+    border: 0px;
+    box-shadow: 7px 7px 10px #5c5d5e;
+}
+.Programas a{
+    text-decoration: none;
+}
+
+
+/*--------------------MATRICULAS---------------------*/
+
+.Matriculas{
+    width: 100%;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #083B86;
+    display: grid;
+    grid-template-columns: 60% 38%;
+    grid-template-rows: auto;
+    column-gap: 2%;
+    /*row-gap: 15px;*/
+    grid-template-areas: 
+    "MA MD"
+    "MB MD"
+    "MC MD";
+}
+.Matriculas .MA{
+    grid-area: MA;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 8%;
+}
+.Matriculas .MA h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.Matriculas .MB{
+    grid-area: MB;
+    display: grid;
+    grid-template-columns: 1 fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Ml1 Ml2"
+    "Ml3 Ml4"
+    "Ml5 Ml6";
+    column-gap: 15px;
+    row-gap: 10px;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.Matriculas .MB .Ml1{
+    grid-area: Ml1;
+}
+.Matriculas .MB .Ml2{
+    grid-area: Ml2;
+    list-style: none;
+}
+.Matriculas .MB .Ml3{
+    grid-area: Ml3;
+}
+.Matriculas .MB .Ml4{
+    grid-area: Ml4;
+    list-style: none;
+}
+.Matriculas .MB .Ml5{
+    grid-area: Ml5;
+}
+.Matriculas .MB .Ml6{
+    grid-area: Ml6;
+    list-style: none;
+}
+.Matriculas .MB .Ml1, .Ml3, .Ml5{
+    list-style: none;
+    font-size: 1.8rem;
+    text-align: center;
+    border: #083B86 solid 2px;
+    border-radius: 100%;
+    padding: 5px 12px 5px 12px;
+    background-color: #6AB528;
+    box-shadow: 3px 3px 10px #5c5d5e;
+}
+.Matriculas .MC{
+    grid-area: MC;
+    margin: auto;
+}
+.Matriculas .MDext{
+    grid-area: MD;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    background-color: #070d16;
+}
+.Matriculas .MDext .MD{
+    margin: auto;
+}
+.Matriculas .MD .MDA{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.Matriculas .MD .MDA i{
+    font-size: 1.8rem;
+    text-align: center;
+    border: #083B86 solid 2px;
+    border-radius: 100%;
+    padding: 5px 12px 5px 12px;
+    background-color: #6AB528;
+    box-shadow: 3px 3px 10px #5c5d5e;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.Matriculas .MD .form{
+    background-color: white;
+    margin: auto;
+    width: 85%;
+    border: #083B86 solid;
+    border-radius: 10px;
+    padding: 15px;
+    color: #083B86;
+    box-shadow: 7px 7px 10px #5c5d5e;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.Matriculas .MD .form .titulof{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Matriculas .MD .form .controls{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #083B86;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #083B86;
+}
+.Matriculas .MD .form .pf{
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-size: 1rem;
+}
+.Matriculas .MD .form .pf a{
+    color: #083B86;
+    text-decoration: none;
+}
+.Matriculas .MD .form .pf a:hover{
+    color: #6AB528;
+    text-decoration: none;
+}
+.Matriculas .MD .form .extboton{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.Matriculas .MD .form .boton{
+    background-color: #6AB528;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Matriculas .MD .form .boton:hover{
+    background-color: #083B86;
+    color: white;
+}
+
+/*--------------------ESTUDIANTES---------------------*/
+.Estudiantes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: 
+    "EA EB";
+    font-size: 2.5rem;
+}
+.Estudiantes .EA{
+    grid-area: EA;
+    background-image: url("./imagenes/IngV.jpg");
+}
+.Estudiantes .EB{
+    grid-area: EB;
+    background-image: url("./imagenes/IngP.PNG");
+}
+.Estudiantes .EA .EAint, .EBint{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-items: flex-end;
+}
+.Estudiantes .EA a, .EB a{
+    text-decoration: none;
+}
+.Estudiantes .EA .EAint:hover{
+    border: #6AB528 10px solid;
+}
+.Estudiantes .EBint:hover{
+    border: #083B86 10px solid;
+}
+.Estudiantes .EA h2, .EB h2{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    align-self: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+/*--------------------CONTACTOS---------------------*/
+.contactos{
+    margin:auto;
+    width: 90%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #083B86;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "CA CA CD"
+    "CB CC CD";
+}
+.contactos .CA{
+    grid-area: CA;
+    margin-top: 40px;
+}
+.contactos .CA h1{
+    padding-bottom: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.contactos .CA p{
+    text-align: center;
+    padding: 3px;
+}
+.contactos .CB{
+    grid-area: CB;
+    display: flex;
+    justify-content: flex-end;
+}
+.contactos .CC{
+    grid-area: CC;
+}
+.contactos iframe{
+    padding: 15px;
+
+}
+.contactos .CD{
+    grid-area: CD;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.contactos .CD form{
+    width: 400px;
+    border: 2px solid #083B86;
+    border-radius: 2%;
+    padding: 10px;
+}
+.contactos .CD form h2{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contactos .CD form input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #083B86;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #083B86;
+}
+.contactos .CD form .boton{
+    background-color: #6AB528;
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contactos .CD form .boton:hover{
+    background-color: #083B86;
+    color: white;
+}
+.contactos .CD div{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25px;
+}
+.contactos .CD div img{
+    margin: 5px;
+}
+
+
+/*--------------------Terminos y Condiciones---------------------*/
+.TDTC{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #083B86;
+    margin: auto;
+}
+.TDTC h2{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20px;
+    margin-top: 40px;
+}
+.TDTC p{
+    padding-bottom: 40px;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    body{
+        font-size: 1rem;
+    }
+    /*-------------------HEADER---------------------*/
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo"
+        "menu";
+        width: 100%;
+    }
+    .logo{
+        margin: auto;
+    }
+    nav{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        margin: auto;
+        align-items: center;
+
+    }
+    header nav a{ 
+        margin-left: 5px;
+    }
+
+    /*-----------------------FOOTER----------------------------*/
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "footer1"
+        "footer2";
+        align-items: flex-start;
+    }
+    footer .footer1{
+        margin-inline-start: 20px;
+    }
+    footer .footer2{
+        border-left: 0px;
+    }
+
+    /*------------------------INDEX-------------------------*/
+    .Index{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 0px;
+        grid-template-areas: 
+        "A A"
+        "B B"
+        "C C"
+        "D D"
+        "E E"
+        "F F"
+        "G G"
+        "H H"
+        "I J"
+        "K K";
+    }
+    .A .A1{
+        justify-content: flex-start;
+    }
+    .A .A1 img{
+        display: none;
+    }
+    .A .A2{
+        width: 100%;
+    }
+    .B .form{
+        width: 70%;
+        margin: auto;
+    }
+    .D .Dbox, .E .Ebox, .F .Fbox{
+        width: 80%;
+        margin: auto;
+    }
+    .D h3, .E h3, .F h3{
+        padding-top: 35px;
+    }
+
+    .G{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows:auto;
+        grid-template-areas: 
+        "G1A"
+        "G1B"
+        "G2B"
+        "G2A"
+        "G3A"
+        "G3B";
+        row-gap: 0px;
+        width: 95%;
+        margin: auto;
+    }
+    .G .G1B, .G2A, .G3B{
+        padding: 0px;
+        margin: 10px 10px 0px 10px;
+    }
+
+    .G img{
+        margin-top: 40px;
+    }
+    .K{
+        width: 42%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    /*--------------------PROGRAMAS---------------------*/
+    .Programas{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "PA PA"
+        "PB PB"
+        "PC PD"
+        "PE PF"
+        "PG PG"
+        "PH PI"
+        "PJ PK"
+        "PL PM"
+        "PN PO"
+        "PP PP"
+        "PQ PR"
+        "PS PT"
+        "PU PV"
+        "PW PX";    
+    }
+
+    /*--------------------MATRICULAS---------------------*/
+    .Matriculas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        column-gap: 2%;
+        /*row-gap: 15px;*/
+        grid-template-areas: 
+        "MA"
+        "MB"
+        "MC"
+        "MD";
+    }
+    .Matriculas .MA{
+        margin-top: 40px;
+    }
+    .Matriculas .MD .form{
+        width: 70%;
+    }
+    .Matriculas .MDext{
+        padding: 20px;
+    }
+    .Matriculas .MD .MDA{
+        padding-top: 10px;
+        padding-left: 40px;
+    }
+    /*--------------------ESTUDIANTES---------------------*/
+    .Estudiantes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "EA"
+        "EB";
+    }
+    .Estudiantes .EA, .EB{
+        height: 600px;
+    }
+    .Estudiantes .EA .EAint, .EBint{
+        width: 100%;
+        height: 100%;
+    }
+    /*--------------------CONTACTOS---------------------*/
+    .contactos{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "CA CA"
+        "CB CC"
+        "CD CD";
+        justify-content: center;
+    }
+    .contactos .CB{
+        justify-content: center;
+    }
+    .contactos .CC{
+        display: flex;
+        justify-content: center;
+    }
+    .contactos .CD{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .contactos iframe{
+        padding: 0px;
+        width: 90%;
+        height: 300px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .contactos .CD form{
+        width: 60%;
+        padding: 0px;
+        padding: 10px;
+        align-self: center;
+    }
+    .contactos .CD div{
+        padding-top: 15px;
+    }
+    .contactos .CD div{
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    body{
+        font-size: 1.1rem;
+    }
+    /*-------------------HEADER---------------------*/
+    header{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "logo"
+        "menu";
+        width: 100%;
+    }
+    .logo{
+        margin: auto;
+    }
+    nav{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        margin: auto;
+        align-items: center;
+    }
+    header nav a{ 
+        margin-left: 5px;
+    }
+    /*------------------------INDEX-------------------------*/
+    .Index{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 0px;
+        grid-template-areas: 
+        "A A A"
+        "B B B"
+        "C C C"
+        "D E F"
+        "G G G"
+        "H H H"
+        "I J K";
+    }
+    .A .A1{
+        align-items: center;
+    }
+    .B .form{
+        width: 50%;
+        margin: auto;
+    }
+    .D .Dbox{
+        width: 95%;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        row-gap:15px;
+        grid-template-areas: 
+        "D1 D2"
+        "D3 D4"
+        "D5 D6";
+    }
+    .E .Ebox{
+        width: 95%;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        row-gap:15px;
+        grid-template-areas: 
+        "E1 E2"
+        "E3 E4"
+        "E5 E6";
+    }
+    .F .Fbox{
+        justify-content: center;
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        row-gap:15px;
+        grid-template-areas: 
+        "F1 F2"
+        "F3 F4"
+        "F5 F6";
+    }
+    .G{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows:auto;
+        grid-template-areas: 
+        "G1A"
+        "G1B"
+        "G2B"
+        "G2A"
+        "G3A"
+        "G3B";
+        row-gap: 0px;
+        width: 95%;
+        margin: auto;
+    }
+    .G .G1B, .G2A, .G3B{
+        padding: 0px;
+        margin: 10px 10px 0px 10px;
+    }
+    .G .G1A, .G2B, .G3A{
+        margin-top: 40px;
+        width: 80%;
+        justify-self: center;
+    }
+    .I, .J, .K{
+        margin: 0px 8px 20px 8px;
+    }
+    /*--------------------MATRICULAS---------------------*/
+    .Matriculas{
+        grid-template-columns: 50% 48%;
+    }
+    /*--------------------ESTUDIANTES---------------------*/
+    .Estudiantes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "EA"
+        "EB";
+    }
+    .Estudiantes .EA, .EB{
+        height: 600px;
+    }
+    .Estudiantes .EA .EAint, .EBint{
+        width: 100%;
+        height: 100%;
+    }
+    /*--------------------CONTACTOS---------------------*/
+    .contactos{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "CA CA"
+        "CB CC"
+        "CD CD";
+        justify-content: center;
+    }
+    .contactos .CB{
+        justify-content: center;
+    }
+    .contactos .CC{
+        display: flex;
+        justify-content: center;
+    }
+    .contactos .CD{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .contactos iframe{
+        padding: 0px;
+        width: 90%;
+        height: 300px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .contactos .CD form{
+        width: 60%;
+        padding: 0px;
+        padding: 10px;
+        align-self: center;
+    }
+    .contactos .CD div{
+        padding-top: 15px;
+    }
+    .contactos .CD div{
+        width: 100%;
+    }
+
+}
