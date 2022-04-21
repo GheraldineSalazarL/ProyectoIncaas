@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./imag/favicon-96x96.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="estilos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +16,8 @@
     </head>
 
     <body>
-
         <header>
+<<<<<<< HEAD
             <a class="logo" href="./index.html"><img src="./imag/LCompleto.png" alt="Logo"width="400px"></a>
             <nav>
                 <a href="./iniciarsesion.html"><img src="./imag/iniciar-sesion.png" alt="Iniciar Sesion" width="40px"></a>
@@ -34,104 +35,137 @@
                     <li><a href="./contactos.html">Contactos</a></li>
                 </ul>
             </nav>
+=======
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D0D2D4;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html"><img src="./imag/LCompleto.png" alt="Logo"width="350px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav justify-content-end w-100">
+                      <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="./programas.html">Programas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./matriculas.html">Matrículas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./estudiantes.html">Estudiantes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contactos.html">Contactos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+>>>>>>> rama1
         </header>
 
-        <main class="Matriculas">
-            <div class="MA">
-                <h1 class="wow animate__animated animate__bounceInLeft">¡Inscríbete Aquí!</h1>
-                <h4>Para realizar tu inscripción a cualquiera de nuestros programas debes completar 3 sencillos pasos:</h4>
-            </div>
-            <div class="MB">
-                <ul class="Ml1 wow animate__animated animate__pulse">
-                    <li><i class="fa-solid fa-1"></i></li>
-                </ul>
-                <ul class="Ml2">
-                    <li>Dilingencia el siguiente formulario con tus datos personales</li>
-                </ul>
-                <ul class="Ml3 wow animate__animated animate__pulse">
-                    <li><i class="fa-solid fa-2"></i></i></li>
-                </ul>
-                <ul class="Ml4">
-                    <li>Escoge el programa que deseas estudiar, selecciona el medio de pago y realiza tu pago</li>
-                </ul>
-                <ul class="Ml5 wow animate__animated animate__pulse">
-                    <li><i class="fa-solid fa-3"></i></li>
-                </ul>
-                <ul class="Ml6">
-                    <li>A continuación, recibirás un mail de confirmación de reservación de cupo junto con el instrutivo de pasos a seguir</li>
-                </ul>
-            </div> 
-            <div class="MC">
-                <img src="./imag/Matric.png" alt="Comienza" width="300px">
-            </div>
-            <div class="MDext">
-                <div class="MD">
-                    <section class="MDA wow animate__animated animate__bounce">
-                        <i class="fa-solid fa-1"></i>
-                        <h2>Primer Paso:</h2>
-                    </section>
-                    <section class="form wow animate__animated animate__pulse">
-                        <h3 class="titulof">Formulario de Inscripción</h3>
-                        <form action="">
-                            <input class="controls" type="text" placeholder="Ingrésa tu Nombre" name="nombre" required>
-                            <input class="controls" type="text" placeholder="Ingésa tu Apellido" name="apellido" required>
-                            <input class="controls" type="text" placeholder="Ingésa tu Número de Identificación" name="nid" required>
-                            <input class="controls" type="email" placeholder="Ingrésa tu Email" name="email" required>
-                            <input class="controls" type="tel" placeholder="Ingrésa tu Teléfono" name="telfono" required>
-                            <select class="controls" id="Programa" name="programa" id="">
-                                <option value="seleccion">Selecciona el Programa</option>
-                                <option value="ts">Técnico Laboral en Sistemas</option>
-                                <option value="ta">Técnico Laboral en Asistencia Administrativa</option>
-                                <option value="tas">Técnico Laboral en Auxiliar Administrativo de Salud</option>
-                                <option value="td">Técnico Laboral en Diseño y Dibujo Computarizado</option>
-                                <option value="i1">Inglés 1</option>
-                                <option value="i2">Inglés 2</option>
-                                <option value="p">Portugues</option>
-                                <option value="eb">Excel Básico</option>
-                                <option value="ei">Excel Intermedio con Énfasis en Tablas Dinámicas</option>
-                                <option value="lc">Lectura Crítica</option>
-                                <option value="rl">Razonamiento Lógico</option>
-                                <option value="ps">Pruebas Saber</option>
-                                <option value="s">Seminario</option>
-                            </select>
-                            <p class="pf">Estoy de acuerdo con los <label for="acepta"><a href="./tratamientodedatos.html" target="_blanc">Terminos y Condiciones</a></label></p>
-                            <section class="extboton">
-                                <input class="boton" type="submit" value="Siguiente">
-                            </section>
-                        </form>
-                    </section>
+        <main class="Matriculas container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-7">
+                    <div class="MA">
+                        <h1 class="wow animate__animated animate__bounceInLeft">¡Inscríbete Aquí!</h1>
+                        <h4>Para realizar tu inscripción a cualquiera de nuestros programas debes completar 3 sencillos pasos:</h4>
+                    </div>
+                    <div class="MB">
+                        <ul class="Ml1 wow animate__animated animate__pulse">
+                            <li><i class="fa-solid fa-1"></i></li>
+                        </ul>
+                        <ul class="Ml2">
+                            <li>Dilingencia el siguiente formulario con tus datos personales</li>
+                        </ul>
+                        <ul class="Ml3 wow animate__animated animate__pulse">
+                            <li><i class="fa-solid fa-2"></i></i></li>
+                        </ul>
+                        <ul class="Ml4">
+                            <li>Escoge el programa que deseas estudiar, selecciona el medio de pago y realiza tu pago</li>
+                        </ul>
+                        <ul class="Ml5 wow animate__animated animate__pulse">
+                            <li><i class="fa-solid fa-3"></i></li>
+                        </ul>
+                        <ul class="Ml6">
+                            <li>A continuación, recibirás un mail de confirmación de reservación de cupo junto con el instrutivo de pasos a seguir</li>
+                        </ul>
+                    </div> 
+                    <div class="MC">
+                        <img src="./imag/Matric.png" alt="Comienza" width="300px">
+                    </div>
                 </div>
+                <div class="col-xs-12 col-md-12 col-lg-5">
+                    <div class="MDext col-xs-12 col-md-12 col-lg-12">
+                        <div class="MD">
+                            <section class="MDA wow animate__animated animate__bounce">
+                                <i class="fa-solid fa-1"></i>
+                                <h2>Primer Paso:</h2>
+                            </section>
+                                                
+                            <form class="form wow animate__animated animate__pulse">
+                                <div class="mb-2">
+                                    <label for="exampleInput" class="form-label">Nombre completo</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                                <div class="mb-2">
+                                    <label for="exampleInput" class="form-label">Número de Identificación</label>
+                                    <input type="number" class="form-control" >
+                                </div>
+                                <div class="mb-2">
+                                    <label for="exampleInput" class="form-label">Email</label>
+                                    <input type="email" class="form-control" >
+                                </div>
+                                <div class="mb-2">
+                                    <label for="exampleInput" class="form-label">Teléfono</label>
+                                    <input type="email" class="form-control" >
+                                </div>
+                                <div class="mb-2 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"><p class="pf">Estoy de acuerdo con los <label for="acepta"><a href="./tratamientodedatos.html" target="_blanc">Terminos y Condiciones</a></label></p></label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Siguiente</button>
+                            </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </main>
 
 
-        <hr>
-        <footer>
-            <section class="footer1">
-                <h4>Llámanos o Escríbenos</h4>
-                <p><b>Teléfono:</b> 0317313131</p>
-                <p><b>Celular:</b> (+57) 3137444734</p>
-                <p><b>WhatsApp:</b> (+57) 3216632268</p>
-                <p><b>Email:</b> instituto.incaasoficial@gmail.com, instituto.incaas@gmail.com</p>
-            </section>
-            <section class="footer2"> 
-                <h4>Siguenos en:</h4>
-                <a  href="https://es-la.facebook.com/Instituto.Incaas/" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/facebook.png" alt="facebook" width="40px"></a>
-                <a href="https://www.youtube.com/user/INCAASNARINO" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/youtube.png" alt="youtube"width="40px"></a>
-                <a href="https://twitter.com/institutoincaas" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/twitter.png" alt="linkedin"width="40px"></a>
-                <a href="https://www.instagram.com/instituto.incaas/?hl=es" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/instagram.png" alt="instagram"width="40px"></a>
-                <br>
-                <br>
-                <h4>Suscríbete al Newsletter</h4>
-                <p>Las últimas noticias sobre habilidades que debes aprender para enfrentarte al mundo laboral y educativo.</p>
-                <form action="">
-                    <label for="email">Email*</label>
-                    <input type="email" name="email" required>
-                    <input class="footerboton" type="submit" value="Suscribirme">
-                </form>
-            </section>
+        <footer container>
+            <div class="row">
+                <section class="footer1 col-xs-12 col-md-12 col-lg-4">
+                    <h4>Llámanos o Escríbenos</h4>
+                    <p><b>Teléfono:</b> 0317313131</p>
+                    <p><b>Celular:</b> (+57) 3137444734</p>
+                    <p><b>WhatsApp:</b> (+57) 3216632268</p>
+                    <p><b>Email:</b> instituto.incaasoficial@gmail.com, instituto.incaas@gmail.com</p>
+                </section>
+                <section class="footer2 col-xs-12 col-md-12 col-lg-8"> 
+                    <h4>Siguenos en:</h4>
+                    <a  href="https://es-la.facebook.com/Instituto.Incaas/" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/facebook.png" alt="facebook" width="40px"></a>
+                    <a href="https://www.youtube.com/user/INCAASNARINO" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/youtube.png" alt="youtube"width="40px"></a>
+                    <a href="https://twitter.com/institutoincaas" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/twitter.png" alt="linkedin"width="40px"></a>
+                    <a href="https://www.instagram.com/instituto.incaas/?hl=es" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/instagram.png" alt="instagram"width="40px"></a>
+                    <br>
+                    <br>
+                    <h4>Suscríbete al Newsletter</h4>
+                    <p>Las últimas noticias sobre habilidades que debes aprender para enfrentarte al mundo laboral y educativo.</p>
+                    <form action="">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" required>
+                        <input class="footerboton" type="submit" value="Suscribirme">
+                    </form>
+                </section>
+            </div>
             <a class="wpp" href="https://wa.me/573216632268" target="_blanc"> <img src="./imag/whatsapp.png" alt="WhatsApp" width="40px"></a>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="./js/wow.min.js"></script><script>new WOW().init();</script>
     </body>
 </html>
