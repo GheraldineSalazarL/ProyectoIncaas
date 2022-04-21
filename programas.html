@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./imag/favicon-96x96.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="estilos.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,147 +16,257 @@
     </head>
 
     <body>
-
         <header>
-            <a class="logo" href="./index.html"><img src="./imag/LCompleto.png" alt="Logo"width="400px"></a>
-            <nav>
-                <a href="./iniciarsesion.html"><img src="./imag/iniciar-sesion.png" alt="Iniciar Sesion" width="40px"></a>
-                <ul class="menu"> 
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./programas.html">programas</a>
-                        <ul class="submenu">
-                            <li><a href="./programas.html#tecnicos">Técnicos</a></li>
-                            <li><a href="./programas.html#cursos">Cursos</a></li>
-                            <li><a href="./programas.html#seminarios">Seminarios</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./matriculas.html">Matrículas</a></li>
-                    <li><a href="./estudiantes.html">Estudiantes</a></li>
-                    <li><a href="./contactos.html">Contactos</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D0D2D4;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html"><img src="./imag/LCompleto.png" alt="Logo"width="350px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav justify-content-end w-100">
+                      <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="./programas.html">Programas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./matriculas.html">Matrículas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./estudiantes.html">Estudiantes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contactos.html">Contactos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
 
 
-        <main class="Programas">
-            <div class="PA"><h1>Nuestros Programas</h1></div> 
-            
-            <div class="PB" id="tecnicos"><h2>Técnicos Laborales</h2></div>
-            <a href="./programas.html"><div class="PC">
-                <img src="./imag/Tsistemas.jpg" alt="Técnico en Sistemas" width="250px">
-                <h3>Técnico en Sistemas Informáticos</h3>
-            </div></a>
-            <a href="./programas.html"><div class="PD">
-                <img src="./imag/Tadministrativa.jpg" alt="Técnico en Asistencia Administrativa" width="250px"> 
-                <h3>Técnico en Asistencia Administrativa </h3>
-            </div></a>
-            <a href="./programas.html"><div class="PE">
-                <img src="./imag/Tauxiliar.jpg" alt="Técnico en Secretariado" width="250px">
-                <h3>Auxiliar Administrativo de Salud</h3>
-            </div></a>
-            <a href="./programas.html"><div class="PF">
-                <img src="./imag/Tdiseño.jpg" alt="Técnico en Secretariado" width="250px">
-                <h3>Diseño y Dibujo Computarizado</h3>
-            </div></a>
-            
-            <div class="PG" id="cursos"><h2>Cursos</h2></div>
-            <a href="./programas.html"><div class="PH">
-                <img src="./imag/Cingles1.jpg" alt="Inglés" width="250px">
-                <h3>Inglés 1</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PI">
-                <img src="./imag/Cingles2.jpg" alt="Inglés" width="250px">
-                <h3>Inglés 2</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PJ">
-                <img src="./imag/Cportugues.jpg" alt="Inglés" width="250px">
-                <h3>Portugues</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PK">
-                <img src="./imag/Cexcelb.jpg" alt="Excel Básico" width="250px">
-                <h3>Excel Básico</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PL">
-                <img src="./imag/Cexceli.jpg" alt="Excel Avanzado" width="250px">
-                <h3>Excel Intermedio</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PM">
-                <img src="./imag/Clectura.jpg" alt="Lectura Crítica" width="250px">
-                <h3>Lectura Crítica</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PN">
-                <img src="./imag/Crazonamiento.jpg" alt="Razonamiento Matemático" width="250px">
-                <h3>Razonamiento Lógico</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PO">
-                <img src="./imag/Cpruebas.jpg" alt="Lectura Crítica" width="250px">
-                <h3>Pruebas Saber</h3>  
-            </div></a>
-            
-            <div class="PP" id="seminarios"><h2>Seminarios</h2></div>
-            <a href="./programas.html"><div class="PQ">
-                <img src="./imag/Sinvestigacion.jpg" alt="Técnicas de la Investigación" width="250px">
-                <h3>Técnicas de la Investigación y Documentación</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PR">
-                <img src="./imag/Semprendimiento.jpg" alt="Emprendimiento motivación y liderazgo" width="250px">
-                <h3>Emprendimiento, Motivación y Liderazgo</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PS">
-                <img src="./imag/Sproyectos.jpg" alt="Formulación de Proyectos y Riesgos Laborales" width="250px">
-                <h3>Formulación de Proyectos y Riesgos Laborales</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PT">
-                <img src="./imag/Sliderazgo.jpg" alt="Motivación liderazgo y Emprendimiento" width="250px">
-                <h3>Fenomenología de la Investigación 
-                </h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PU">
-                <img src="./imag/Satencion.jpg" alt="Atención al Cliente" width="250px">
-                <h3>Atención al Cliente </h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PV">
-                <img src="./imag/Selecticidad.jpg" alt="Electricidad Básica" width="250px">
-                <h3>Electricidad Básica</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PW">
-                <img src="./imag/Selectronica.jpg" alt="Electrónica Básica" width="250px">
-                <h3>Electrónica Básica</h3>  
-            </div></a>
-            <a href="./programas.html"><div class="PX">
-                <img src="./imag/Sprimerosau.jpg" alt="Primeros Auxilios" width="250px">
-                <h3>Primeros Auxilios</h3>  
-            </div></a>
+        <main class="Programas container">
+            <div class="row">
+                <div class="p-5 col-xs-12 col-ms-12 col-md-12 col-lg-12">
+                    <h1> Nuestros Programas</h1>          
+                </div> 
+                <div class="p-2 col-xs-12 col-ms-12 col-md-12 col-lg-12">
+                    <h2> Técnicos Laborales</h2>          
+                </div> 
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Tsistemas.jpg" class="card-img-top" alt="Técnico en Sistemas">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Técnico en Sistemas Informáticos</h4>
+                    <p class="card-text">Enfrenta retos que implica operar equipos de computo, monitorear la operación de sistemas de computación y redes de computo. coordinar su uso. Producir reportes de operación. Hacer mantenimiento de hardware y software. Diseñar sitios de Web dinámicos y utilizar correctamente herramientas de ofimática, sistemas operativos y equipos.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Tadministrativa.jpg" class="card-img-top" alt="Técnico en Asistencia Administrativa">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Técnico en Asistencia Administrativa</h4>
+                    <p class="card-text">Enfrenta retos que implica coordinar e implementar procedimientos administrativos, establezcan prioridades de trabajo y coordinan actividades de adquisición de servicios administrativos como espacio, suministros y servicios de seguridad. Tanto en el conocimiento como en el desempeño de las competencias.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Tauxiliar.jpg" class="card-img-top" alt="Técnico en Secretariado">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Técnico Auxiliar Administrativo de Salud</h4>
+                    <p class="card-text">Enfrenta retos que implica atender a usuarios en la prestación de servicios a la salud, apoyen a médicos generales y especialistas y tramiten formularios de afiliación y apertura de historias clínicas.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Tdiseño.jpg" class="card-img-top" alt="Técnico en Diseño">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Técnico en Diseño y Dibujo Computarizado</h4>
+                    <p class="card-text">Enfrenta retos que implica  desarrollar diseños, elaborar dibujos y planos con base en conceptos preliminares, bosquejos, cálculos de ingeniería, especificaciones y otra información, operar programas de diseño y dibujo computarizado, revisar y verificar diseños y dibujos, de conformidad con especificaciones e información, preparar especificaciones de construcción y estimativos de costos y materiales y Completar paquetes de documentación y producir series de dibujos.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="pt-5 pb-2 col-xs-12 col-ms-12 col-md-12 col-lg-12">
+                    <h2> Cursos</h2>          
+                </div> 
+            </div>
+            <div class="row justify-content-center">
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Cingles1.jpg" class="card-img-top" alt="Inglés">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Inglés 1</h4>
+                    <p class="card-text">Desarrollar las habilidades de una segunda lengua: Listening, Speaking, Reading, and Writing. Con énfasis aplicado a Gramática.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Cingles2.jpg" class="card-img-top" alt="Inglés">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Inglés 2</h4>
+                    <p class="card-text">Desarrollar las habilidades de una segunda lengua: Listening, Speaking, Reading, and Writing. Con énfasis aplicado a Gramática.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Cportugues.jpg" class="card-img-top" alt="Portugues">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Portugues</h4>
+                    <p class="card-text">Desarrollar las habilidades de una segunda lengua: Listening, Speaking, Reading, and Writing. Con énfasis aplicado a Gramática.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Cexcelb.jpg" class="card-img-top" alt="Excel Básico">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Excel Básico</h4>
+                    <p class="card-text">Aprende a usar Excel desde cero, con el uso de la hoja de calculo, gráficos, formato de tablas, ordenar  y validación de datos.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Cexceli.jpg" class="card-img-top" alt="Excel Avanzado">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Excel Intermedio</h4>
+                    <p class="card-text">Incrementa y mejora tus conocimientos en Excel con tablas dinámicas, formulas lógicas.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Crazonamiento.jpg" class="card-img-top" alt="Razonamiento">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Razonamiento Lógico</h4>
+                    <p class="card-text">Aumentar la capacidad de razonar, estructurar y organizar ideas, mejorando el proceso mental que implica el razonamiento lógico.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Clectura.jpg" class="card-img-top" alt="Lectura Crítica">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Lectura Crítica</h4>
+                    <p class="card-text">Desarrollo de las capacidades de observación, interpretación y evaluación de cualquier tipo de texto, entendiendo y relacionando estos tipos con diferentes escritos de su misma naturaleza y al mismo tiempo llevándolos al contexto actual y cultural.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Cpruebas.jpg" class="card-img-top" alt="Pruebas de estado">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Pruebas de Estado</h4>
+                    <p class="card-text">Desarrollar competencias de comunicación escrita, lectura crítica, razonamiento cuantitativo e inglés, como segundo idioma en el país, competencias que son tenidas en cuenta para evaluar no solo a un estudiante, si no, a una institución, por medio de pruebas de estado.</p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="pt-5 pb-2 col-xs-12 col-ms-12 col-md-12 col-lg-12">
+                    <h2> Semininarios</h2>          
+                </div> 
+            </div>
+            <div class="row justify-content-center">
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Sinvestigacion.jpg" class="card-img-top" alt="Técnicas de la Investigación">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Técnicas de la Investigación y Documentación</h4>
+                    <p class="card-text"></p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Semprendimiento.jpg" class="card-img-top" alt="Emprendimiento motivación y liderazgo">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Emprendimiento, Motivación y Liderazgo</h4>
+                    <p class="card-text"></p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Sproyectos.jpg" class="card-img-top" alt="Formulación de Proyectos y Riesgos Laborales">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Formulación de Proyectos y Riesgos Laborales</h4>
+                    <p class="card-text"></p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Sliderazgo.jpg" class="card-img-top" alt="Motivación liderazgo y Emprendimiento">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Fenomenología de la Investigación</h4>
+                    <p class="card-text"></p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Satencion.jpg" class="card-img-top" alt="Atención al Cliente">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Atención al Cliente </h4>
+                    <p class="card-text"></p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Selecticidad.jpg" class="card-img-top" alt="Electricidad Básica">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Electricidad Básica</h4>
+                    <p class="card-text"></p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Selectronica.jpg" class="card-img-top" alt="Electrónica Básica">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Electrónica Básica</h4>
+                    <p class="card-text"></p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                <div class="card col-xs-8 col-ms-6 col-md-4 col-lg-3 p-2" style="width: 18rem;">
+                    <img src="./imag/Sprimerosau.jpg" class="card-img-top" alt="Primeros Auxilios">
+                    <div class="card-body">
+                    <h4 class="card-title text-primary">Primeros Auxilios</h4>
+                    <p class="card-text"></p>
+                    <a href="./programas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+                
+            </div>
         </main>
 
-
-        <hr>
-        <footer>
-            <section class="footer1">
-                <h4>Llámanos o Escríbenos</h4>
-                <p><b>Teléfono:</b> 0317313131</p>
-                <p><b>Celular:</b> (+57) 3137444734</p>
-                <p><b>WhatsApp:</b> (+57) 3216632268</p>
-                <p><b>Email:</b> instituto.incaasoficial@gmail.com, instituto.incaas@gmail.com</p>
-            </section>
-            <section class="footer2"> 
-                <h4>Siguenos en:</h4>
-                <a  href="https://es-la.facebook.com/Instituto.Incaas/" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/facebook.png" alt="facebook" width="40px"></a>
-                <a href="https://www.youtube.com/user/INCAASNARINO" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/youtube.png" alt="youtube"width="40px"></a>
-                <a href="https://twitter.com/institutoincaas" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/twitter.png" alt="linkedin"width="40px"></a>
-                <a href="https://www.instagram.com/instituto.incaas/?hl=es" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/instagram.png" alt="instagram"width="40px"></a>
-                <br>
-                <br>
-                <h4>Suscríbete al Newsletter</h4>
-                <p>Las últimas noticias sobre habilidades que debes aprender para enfrentarte al mundo laboral y educativo.</p>
-                <form action="">
-                    <label for="email">Email*</label>
-                    <input type="email" name="email" required>
-                    <input class="footerboton" type="submit" value="Suscribirme">
-                </form>
-            </section>
+        <footer container>
+            <div class="row">
+                <section class="footer1 col-xs-12 col-md-12 col-lg-4">
+                    <h4>Llámanos o Escríbenos</h4>
+                    <p><b>Teléfono:</b> 0317313131</p>
+                    <p><b>Celular:</b> (+57) 3137444734</p>
+                    <p><b>WhatsApp:</b> (+57) 3216632268</p>
+                    <p><b>Email:</b> instituto.incaasoficial@gmail.com, instituto.incaas@gmail.com</p>
+                </section>
+                <section class="footer2 col-xs-12 col-md-12 col-lg-8"> 
+                    <h4>Siguenos en:</h4>
+                    <a  href="https://es-la.facebook.com/Instituto.Incaas/" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/facebook.png" alt="facebook" width="40px"></a>
+                    <a href="https://www.youtube.com/user/INCAASNARINO" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/youtube.png" alt="youtube"width="40px"></a>
+                    <a href="https://twitter.com/institutoincaas" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/twitter.png" alt="linkedin"width="40px"></a>
+                    <a href="https://www.instagram.com/instituto.incaas/?hl=es" target="_blanc"><img class="wow animate__animated animate__bounce" src="./imag/instagram.png" alt="instagram"width="40px"></a>
+                    <br>
+                    <br>
+                    <h4>Suscríbete al Newsletter</h4>
+                    <p>Las últimas noticias sobre habilidades que debes aprender para enfrentarte al mundo laboral y educativo.</p>
+                    <form action="">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" required>
+                        <input class="footerboton" type="submit" value="Suscribirme">
+                    </form>
+                </section>
+            </div>
             <a class="wpp" href="https://wa.me/573216632268" target="_blanc"> <img src="./imag/whatsapp.png" alt="WhatsApp" width="40px"></a>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="./js/wow.min.js"></script><script>new WOW().init();</script>
     </body>
 </html>
